@@ -6,6 +6,6 @@ def simple_delete(a_dictionary, key=""):
     If a key doesn’t exist, the dictionary won’t change
     You are not allowed to import any module
     """
-    if a_dictionary.get(key) is not None:
+    if key in a_dictionary:
         del a_dictionary[key]
     return a_dictionary
