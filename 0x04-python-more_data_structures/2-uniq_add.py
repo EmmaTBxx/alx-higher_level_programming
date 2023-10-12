@@ -5,10 +5,10 @@ def uniq_add(my_list=[]):
     """
     # return [result := result + num for num in new_list][-1]
 
-    new_list = list(set(my_list))
-    result = 0
+    uniq_list = set(my_list)
+    num = 0
 
-    for num in new_list:
-        result += num
+    for i in uniq_list:
+        num += i
 
-        return result
+    return (num)
