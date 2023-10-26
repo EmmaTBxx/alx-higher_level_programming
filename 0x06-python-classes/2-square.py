@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 class Square:
     """
     A class that represents a square.
@@ -14,6 +15,10 @@ class Square:
 
         Args:
             size (int): The size of the square (1 side).
+
+        Raises:
+            TypeError: If the input size is not an integer.
+            ValueError: If the input size is less than 0.
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")

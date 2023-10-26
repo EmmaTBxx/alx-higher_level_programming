@@ -1,11 +1,15 @@
 #!/usr/bin/python3
+"""
+This module defines a Square class for representing squares.
+"""
+
 
 class Square:
     """
-    A class that represents a square.
+    A class representing a square.
 
     Attributes:
-        __size (int): The size of the square (1 side).
+        size (int): The size of the square (1 side).
     """
 
     def __init__(self, size=0):
@@ -13,7 +17,7 @@ class Square:
         Initializes a square with a given size.
 
         Args:
-            size (int): The size of the square (1 side).
+            size (int): The size of a side of the square.
 
         Raises:
             TypeError: If the input size is not an integer.
@@ -34,3 +38,16 @@ class Square:
             int: The area of the square.
         """
         return self.__size ** 2
+
+    def my_print(self):
+        """
+        Prints a square using '#' symbols.
+
+        Returns:
+            None
+        """
+        if self.__size == 0:
+            print()
+        else:
+            for _ in range(self.__size):
+                print("#" * self.__size)
